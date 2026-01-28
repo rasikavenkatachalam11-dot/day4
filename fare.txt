@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main(){
+    // int ticket;
+    // scanf("%d",&ticket);
+    int fare;
+    scanf("%d",&fare);
+    printf("Enter the fare %d\n ",fare);
+    printf("1.Sleeper \n");
+    printf("2.AC \n");
+    int age;
+    scanf("%d",&age);
+    // int fare1=300;
+    // int acfare=1000;
+    switch(fare){
+        case 1:
+        if(age<12){
+            fare=(300/2);
+            printf("Fare",fare);
+        }
+        else if(age>=60){
+            fare=300-(300*33/100);
+            printf("Fare",fare-1);
+        }
+        break;
+        case 2:
+        if(age<12){
+            fare=(300/2);
+            printf("Fare",fare);
+        }
+        break;
+        
+    }
+    return 0;
+    
+}
